@@ -150,8 +150,25 @@ export default function HomePage() {
               The <span className="bg-clip-text text-transparent animate-gradient-wave" style={{backgroundImage: 'linear-gradient(90deg, #1DD1A1 0%, #2563EB 100%)', backgroundSize: '200% 100%'}}>intelligent platform</span> for positioning and messaging
             </h1>
 
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto mb-8">
+              Faster, smarter messaging. Brings together every element of the messaging process in one powerful platform, combining strategic rigour with the speed and precision of AI.
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+              <Link href="/get-started">
+                <Button size="lg" className="text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 hover:-translate-y-1" style={{background: 'linear-gradient(90deg, #1DD1A1 0%, #2563EB 100%)', backgroundSize: '200% 100%'}}>
+                  Get started for free
+                  <ArrowRight className="h-5 w-5 ml-2 transition-transform duration-300 group-hover:translate-x-1" />
+                </Button>
+              </Link>
+              <Button size="lg" variant="outline" onClick={() => handleWatchDemo(demoVideos[0])}>
+                <Play className="h-5 w-5 mr-2" />
+                Watch Demo
+              </Button>
+            </div>
+
             {/* Process Flow */}
-            <div className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 text-sm text-slate-600 relative max-w-4xl mx-auto mb-8">
+            <div className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 text-sm text-slate-600 relative max-w-4xl mx-auto">
               {/* Connecting Bar - Hidden on mobile, visible on desktop */}
               <div className="hidden md:block absolute top-4 left-0 right-0 h-0.5 bg-gradient-to-r from-teal-200 via-cyan-200 via-blue-200 to-blue-300">
                 <div
@@ -197,23 +214,6 @@ export default function HomePage() {
                   <span className="font-medium text-slate-700 text-center">Copy and content</span>
                 </div>
               </div>
-            </div>
-
-            <p className="text-xl text-slate-600 max-w-3xl mx-auto mb-8 mt-12">
-              Faster, smarter messaging. Brings together every element of the messaging process in one powerful platform, combining strategic rigour with the speed and precision of AI.
-            </p>
-
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-              <Link href="/get-started">
-                <Button size="lg" className="text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 hover:-translate-y-1" style={{background: 'linear-gradient(90deg, #1DD1A1 0%, #2563EB 100%)', backgroundSize: '200% 100%'}}>
-                  Get started for free
-                  <ArrowRight className="h-5 w-5 ml-2 transition-transform duration-300 group-hover:translate-x-1" />
-                </Button>
-              </Link>
-              <Button size="lg" variant="outline" onClick={() => handleWatchDemo(demoVideos[0])}>
-                <Play className="h-5 w-5 mr-2" />
-                Watch Demo
-              </Button>
             </div>
 
             <style jsx>{`
