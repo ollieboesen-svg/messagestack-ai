@@ -150,25 +150,8 @@ export default function HomePage() {
               The <span className="bg-clip-text text-transparent animate-gradient-wave" style={{backgroundImage: 'linear-gradient(90deg, #1DD1A1 0%, #2563EB 100%)', backgroundSize: '200% 100%'}}>intelligent platform</span> for positioning and messaging
             </h1>
 
-            <p className="text-xl text-slate-600 max-w-3xl mx-auto mb-8">
-              Faster, smarter messaging. Brings together every element of the messaging process in one powerful platform, combining strategic rigour with the speed and precision of AI.
-            </p>
-
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-              <Link href="/get-started">
-                <Button size="lg" className="text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 hover:-translate-y-1" style={{background: 'linear-gradient(90deg, #1DD1A1 0%, #2563EB 100%)', backgroundSize: '200% 100%'}}>
-                  Get started for free
-                  <ArrowRight className="h-5 w-5 ml-2 transition-transform duration-300 group-hover:translate-x-1" />
-                </Button>
-              </Link>
-              <Button size="lg" variant="outline" onClick={() => handleWatchDemo(demoVideos[0])}>
-                <Play className="h-5 w-5 mr-2" />
-                Watch Demo
-              </Button>
-            </div>
-
             {/* Process Flow */}
-            <div className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 text-sm text-slate-600 relative max-w-4xl mx-auto">
+            <div className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 text-sm text-slate-600 relative max-w-4xl mx-auto mb-8">
               {/* Connecting Bar - Hidden on mobile, visible on desktop */}
               <div className="hidden md:block absolute top-4 left-0 right-0 h-0.5 bg-gradient-to-r from-teal-200 via-cyan-200 via-blue-200 to-blue-300">
                 <div
@@ -214,6 +197,23 @@ export default function HomePage() {
                   <span className="font-medium text-slate-700 text-center">Copy and content</span>
                 </div>
               </div>
+            </div>
+
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto mb-8 mt-12">
+              Faster, smarter messaging. Brings together every element of the messaging process in one powerful platform, combining strategic rigour with the speed and precision of AI.
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+              <Link href="/get-started">
+                <Button size="lg" className="text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 hover:-translate-y-1" style={{background: 'linear-gradient(90deg, #1DD1A1 0%, #2563EB 100%)', backgroundSize: '200% 100%'}}>
+                  Get started for free
+                  <ArrowRight className="h-5 w-5 ml-2 transition-transform duration-300 group-hover:translate-x-1" />
+                </Button>
+              </Link>
+              <Button size="lg" variant="outline" onClick={() => handleWatchDemo(demoVideos[0])}>
+                <Play className="h-5 w-5 mr-2" />
+                Watch Demo
+              </Button>
             </div>
 
             <style jsx>{`
@@ -264,84 +264,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Social Proof */}
-      <section className="py-16 bg-slate-900">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-
-
-            <h2 className="text-3xl font-bold text-white mb-4">A smarter way to shape your messaging</h2>
-            <p className="text-slate-300 mb-8">
-
-            </p>
-
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
-              <div className="flex items-start space-x-4">
-                <div className="w-16 h-12 rounded-full bg-teal-600 flex items-center justify-center">
-                  <Clock className="h-6 w-6 text-white" />
-                </div>
-                <div>
-                  <h4 className="text-white font-semibold mb-2">Faster message development</h4>
-                  <p className="text-slate-300">Accelerate your messaging process from months to weeks with an intelligent AI-powered platform.</p>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-4">
-                <div className="w-16 h-12 rounded-full bg-blue-600 flex items-center justify-center">
-                  <Target className="h-6 w-6 text-white" />
-                </div>
-                <div>
-                  <h4 className="text-white font-semibold mb-2">More efficient internal processes</h4>
-                  <p className="text-slate-300">Streamline collaboration and eliminate repetitive tasks with integrated workflows.</p>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-4">
-                <div className="w-16 h-12 rounded-full bg-purple-600 flex items-center justify-center">
-                  <Zap className="h-6 w-6 text-white" />
-                </div>
-                <div>
-                  <h4 className="text-white font-semibold mb-2">Increased precision and resonance</h4>
-                  <p className="text-slate-300">Create messaging that resonates deeply with your target audiences through data-driven insights.</p>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-4">
-                <div className="w-16 h-12 rounded-full bg-green-600 flex items-center justify-center">
-                  <CheckCircle className="h-6 w-6 text-white" />
-                </div>
-                <div>
-                  <h4 className="text-white font-semibold mb-2">Greater brand consistency</h4>
-                  <p className="text-slate-300">Maintain coherent messaging across all channels and touchpoints with strategic frameworks.</p>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-4">
-                <div className="w-16 h-12 rounded-full bg-orange-600 flex items-center justify-center">
-                  <TrendingDown className="h-6 w-6 text-white" />
-                </div>
-                <div>
-                  <h4 className="text-white font-semibold mb-2">Lower overall messaging investment</h4>
-                  <p className="text-slate-300">Reduce costs and resources required for messaging development with streamlined processes and automation.</p>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-4">
-                <div className="w-16 h-12 rounded-full bg-cyan-600 flex items-center justify-center">
-                  <RefreshCw className="h-6 w-6 text-white" />
-                </div>
-                <div>
-                  <h4 className="text-white font-semibold mb-2">Continuous updates to support strategy</h4>
-                  <p className="text-slate-300">Keep your messaging fresh and relevant with ongoing insights and iterative improvements.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Your Messaging Journey */}
-      <section className="py-20 bg-slate-50">
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-16">
@@ -511,6 +435,82 @@ export default function HomePage() {
                   </div>
                 </div>
               </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Social Proof */}
+      <section className="py-16 bg-slate-900">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+
+
+            <h2 className="text-3xl font-bold text-white mb-4">A smarter way to shape your messaging</h2>
+            <p className="text-slate-300 mb-8">
+
+            </p>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
+              <div className="flex items-start space-x-4">
+                <div className="w-16 h-12 rounded-full bg-teal-600 flex items-center justify-center">
+                  <Clock className="h-6 w-6 text-white" />
+                </div>
+                <div>
+                  <h4 className="text-white font-semibold mb-2">Faster message development</h4>
+                  <p className="text-slate-300">Accelerate your messaging process from months to weeks with an intelligent AI-powered platform.</p>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-4">
+                <div className="w-16 h-12 rounded-full bg-blue-600 flex items-center justify-center">
+                  <Target className="h-6 w-6 text-white" />
+                </div>
+                <div>
+                  <h4 className="text-white font-semibold mb-2">More efficient internal processes</h4>
+                  <p className="text-slate-300">Streamline collaboration and eliminate repetitive tasks with integrated workflows.</p>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-4">
+                <div className="w-16 h-12 rounded-full bg-purple-600 flex items-center justify-center">
+                  <Zap className="h-6 w-6 text-white" />
+                </div>
+                <div>
+                  <h4 className="text-white font-semibold mb-2">Increased precision and resonance</h4>
+                  <p className="text-slate-300">Create messaging that resonates deeply with your target audiences through data-driven insights.</p>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-4">
+                <div className="w-16 h-12 rounded-full bg-green-600 flex items-center justify-center">
+                  <CheckCircle className="h-6 w-6 text-white" />
+                </div>
+                <div>
+                  <h4 className="text-white font-semibold mb-2">Greater brand consistency</h4>
+                  <p className="text-slate-300">Maintain coherent messaging across all channels and touchpoints with strategic frameworks.</p>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-4">
+                <div className="w-16 h-12 rounded-full bg-orange-600 flex items-center justify-center">
+                  <TrendingDown className="h-6 w-6 text-white" />
+                </div>
+                <div>
+                  <h4 className="text-white font-semibold mb-2">Lower overall messaging investment</h4>
+                  <p className="text-slate-300">Reduce costs and resources required for messaging development with streamlined processes and automation.</p>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-4">
+                <div className="w-16 h-12 rounded-full bg-cyan-600 flex items-center justify-center">
+                  <RefreshCw className="h-6 w-6 text-white" />
+                </div>
+                <div>
+                  <h4 className="text-white font-semibold mb-2">Continuous updates to support strategy</h4>
+                  <p className="text-slate-300">Keep your messaging fresh and relevant with ongoing insights and iterative improvements.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
