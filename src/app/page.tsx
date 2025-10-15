@@ -265,50 +265,52 @@ export default function HomePage() {
       </section>
 
       {/* Social Proof */}
-      <section className="py-12 bg-slate-900">
+      <section className="py-16 bg-slate-900">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
+            <h2 className="text-3xl font-bold text-white mb-8 text-center">A smarter way to shape your messaging</h2>
+
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               <div className="flex items-start space-x-3">
                 <div className="w-10 h-10 rounded-full bg-teal-600 flex items-center justify-center flex-shrink-0">
                   <Clock className="h-5 w-5 text-white" />
                 </div>
-                <p className="text-slate-300 text-sm">Accelerate your messaging process from months to weeks with an intelligent AI-powered platform.</p>
+                <p className="text-white font-semibold text-sm">Accelerate messaging process from months to weeks</p>
               </div>
 
               <div className="flex items-start space-x-3">
                 <div className="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center flex-shrink-0">
                   <Target className="h-5 w-5 text-white" />
                 </div>
-                <p className="text-slate-300 text-sm">Streamline collaboration and eliminate repetitive tasks with integrated workflows.</p>
+                <p className="text-white font-semibold text-sm">Streamline collaboration and eliminate repetitive tasks</p>
               </div>
 
               <div className="flex items-start space-x-3">
                 <div className="w-10 h-10 rounded-full bg-purple-600 flex items-center justify-center flex-shrink-0">
                   <Zap className="h-5 w-5 text-white" />
                 </div>
-                <p className="text-slate-300 text-sm">Create messaging that resonates deeply with your target audiences through data-driven insights.</p>
+                <p className="text-white font-semibold text-sm">Create messaging that resonates with target audiences</p>
               </div>
 
               <div className="flex items-start space-x-3">
                 <div className="w-10 h-10 rounded-full bg-green-600 flex items-center justify-center flex-shrink-0">
                   <CheckCircle className="h-5 w-5 text-white" />
                 </div>
-                <p className="text-slate-300 text-sm">Maintain coherent messaging across all channels and touchpoints with strategic frameworks.</p>
+                <p className="text-white font-semibold text-sm">Maintain coherent messaging across all channels</p>
               </div>
 
               <div className="flex items-start space-x-3">
                 <div className="w-10 h-10 rounded-full bg-orange-600 flex items-center justify-center flex-shrink-0">
                   <TrendingDown className="h-5 w-5 text-white" />
                 </div>
-                <p className="text-slate-300 text-sm">Reduce costs and resources required for messaging development with streamlined processes and automation.</p>
+                <p className="text-white font-semibold text-sm">Reduce costs and resources for messaging development</p>
               </div>
 
               <div className="flex items-start space-x-3">
                 <div className="w-10 h-10 rounded-full bg-cyan-600 flex items-center justify-center flex-shrink-0">
                   <RefreshCw className="h-5 w-5 text-white" />
                 </div>
-                <p className="text-slate-300 text-sm">Keep your messaging fresh and relevant with ongoing insights and iterative improvements.</p>
+                <p className="text-white font-semibold text-sm">Keep messaging fresh with ongoing insights</p>
               </div>
             </div>
           </div>
