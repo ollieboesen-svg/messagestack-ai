@@ -441,75 +441,50 @@ export default function HomePage() {
       </section>
 
       {/* Social Proof */}
-      <section className="py-16 bg-slate-900">
+      <section className="py-12 bg-slate-900">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-
-
-            <h2 className="text-3xl font-bold text-white mb-4">A smarter way to shape your messaging</h2>
-            <p className="text-slate-300 mb-8">
-
-            </p>
-
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
-              <div className="flex items-start space-x-4">
-                <div className="w-16 h-12 rounded-full bg-teal-600 flex items-center justify-center">
-                  <Clock className="h-6 w-6 text-white" />
+          <div className="max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="flex items-start space-x-3">
+                <div className="w-10 h-10 rounded-full bg-teal-600 flex items-center justify-center flex-shrink-0">
+                  <Clock className="h-5 w-5 text-white" />
                 </div>
-                <div>
-                  <h4 className="text-white font-semibold mb-2">Faster message development</h4>
-                  <p className="text-slate-300">Accelerate your messaging process from months to weeks with an intelligent AI-powered platform.</p>
-                </div>
+                <p className="text-slate-300 text-sm">Accelerate your messaging process from months to weeks with an intelligent AI-powered platform.</p>
               </div>
 
-              <div className="flex items-start space-x-4">
-                <div className="w-16 h-12 rounded-full bg-blue-600 flex items-center justify-center">
-                  <Target className="h-6 w-6 text-white" />
+              <div className="flex items-start space-x-3">
+                <div className="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center flex-shrink-0">
+                  <Target className="h-5 w-5 text-white" />
                 </div>
-                <div>
-                  <h4 className="text-white font-semibold mb-2">More efficient internal processes</h4>
-                  <p className="text-slate-300">Streamline collaboration and eliminate repetitive tasks with integrated workflows.</p>
-                </div>
+                <p className="text-slate-300 text-sm">Streamline collaboration and eliminate repetitive tasks with integrated workflows.</p>
               </div>
 
-              <div className="flex items-start space-x-4">
-                <div className="w-16 h-12 rounded-full bg-purple-600 flex items-center justify-center">
-                  <Zap className="h-6 w-6 text-white" />
+              <div className="flex items-start space-x-3">
+                <div className="w-10 h-10 rounded-full bg-purple-600 flex items-center justify-center flex-shrink-0">
+                  <Zap className="h-5 w-5 text-white" />
                 </div>
-                <div>
-                  <h4 className="text-white font-semibold mb-2">Increased precision and resonance</h4>
-                  <p className="text-slate-300">Create messaging that resonates deeply with your target audiences through data-driven insights.</p>
-                </div>
+                <p className="text-slate-300 text-sm">Create messaging that resonates deeply with your target audiences through data-driven insights.</p>
               </div>
 
-              <div className="flex items-start space-x-4">
-                <div className="w-16 h-12 rounded-full bg-green-600 flex items-center justify-center">
-                  <CheckCircle className="h-6 w-6 text-white" />
+              <div className="flex items-start space-x-3">
+                <div className="w-10 h-10 rounded-full bg-green-600 flex items-center justify-center flex-shrink-0">
+                  <CheckCircle className="h-5 w-5 text-white" />
                 </div>
-                <div>
-                  <h4 className="text-white font-semibold mb-2">Greater brand consistency</h4>
-                  <p className="text-slate-300">Maintain coherent messaging across all channels and touchpoints with strategic frameworks.</p>
-                </div>
+                <p className="text-slate-300 text-sm">Maintain coherent messaging across all channels and touchpoints with strategic frameworks.</p>
               </div>
 
-              <div className="flex items-start space-x-4">
-                <div className="w-16 h-12 rounded-full bg-orange-600 flex items-center justify-center">
-                  <TrendingDown className="h-6 w-6 text-white" />
+              <div className="flex items-start space-x-3">
+                <div className="w-10 h-10 rounded-full bg-orange-600 flex items-center justify-center flex-shrink-0">
+                  <TrendingDown className="h-5 w-5 text-white" />
                 </div>
-                <div>
-                  <h4 className="text-white font-semibold mb-2">Lower overall messaging investment</h4>
-                  <p className="text-slate-300">Reduce costs and resources required for messaging development with streamlined processes and automation.</p>
-                </div>
+                <p className="text-slate-300 text-sm">Reduce costs and resources required for messaging development with streamlined processes and automation.</p>
               </div>
 
-              <div className="flex items-start space-x-4">
-                <div className="w-16 h-12 rounded-full bg-cyan-600 flex items-center justify-center">
-                  <RefreshCw className="h-6 w-6 text-white" />
+              <div className="flex items-start space-x-3">
+                <div className="w-10 h-10 rounded-full bg-cyan-600 flex items-center justify-center flex-shrink-0">
+                  <RefreshCw className="h-5 w-5 text-white" />
                 </div>
-                <div>
-                  <h4 className="text-white font-semibold mb-2">Continuous updates to support strategy</h4>
-                  <p className="text-slate-300">Keep your messaging fresh and relevant with ongoing insights and iterative improvements.</p>
-                </div>
+                <p className="text-slate-300 text-sm">Keep your messaging fresh and relevant with ongoing insights and iterative improvements.</p>
               </div>
             </div>
           </div>
